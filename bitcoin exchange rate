@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class countBTC {
+    public static void main(String[] args) {
+        double x, y, ber;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the Bitcoin price today: ");
+        x = sc.nextInt();
+        System.out.print("Enter how much money do you have: ");
+        y = sc.nextInt();
+        ber = ber(x, y);
+        System.out.println("You can bay: " + ber + " Bitcoin");
+    }
+        public static double ber (double a, double b)
+    {
+        double ber = b/a;
+        return ber;
+
+    }
+
+}
